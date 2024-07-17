@@ -1,0 +1,37 @@
+.contenedor {
+    position: relative;
+    width: 280px; 
+    height: 320px; 
+    background-color: #e0e8f0; 
+    padding: 12px; 
+}
+
+.contenedor.importante{
+    background-color: #EC7063;
+}
+
+.botonPost{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #e0e8f0;
+    border: none;
+}
+
+.post {
+    display: block;
+    width: 280px;
+    height: 320px;
+}
+
+.tituloPost{
+    color: black;
+    padding: 5px;
+
+}
+
+.descripcionPost{
+    color: black;
+
+}

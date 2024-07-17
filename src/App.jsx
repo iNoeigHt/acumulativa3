@@ -1,6 +1,12 @@
+import { useState } from 'react';
+import React from 'react';
 import './app.css';
+import Post from './componentes/Postit';
 
 function App() {
+
+    const [posts, setPosts] = useState([]);
+
     return (
         <div className="container">
             <h1>Post It Simulator!</h1>
@@ -13,7 +19,15 @@ function App() {
                 <button id="boton_agregar">AGREGAR</button>
             </div>
             <div className="block_notas">
-                    
+                {
+                    posts.map((nota) =>
+                        <Post 
+                            titulo={nota.titulo}
+                            descripcion={nota.descripcion}
+                            importante={nota.importante}
+                        />
+                )
+                }
             </div>
         </div>
     )
