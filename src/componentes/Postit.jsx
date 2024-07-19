@@ -15,7 +15,9 @@ export function Post({id, titulo, descripcion, importante, eliminarPost}) {
                 <div className="post">
                     <h1 className="tituloPost"></h1> 
                     <p className="descripcionPost"></p>
-                    <div className="icono-eliminar">
+                    <div 
+                        className="icono-eliminar"
+                        onClick={() => eliminarPost(id)}>
                         <AiOutlineClose />
                     </div>
                 </div> 

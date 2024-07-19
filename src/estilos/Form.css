@@ -21,9 +21,10 @@ form {
     margin-bottom: 20px;
 }
 
-.inputs {
+form input {
     padding: 10px;
     margin-right: 10px;
+    border-radius: 8px;
 }
 
 #titulo {
@@ -35,8 +36,9 @@ form {
 }
 
 #boton_agregar {
-    margin-left: 80px;
+    margin-left: 70px;
     width: 300px;
+    border-radius: 8px;
 }
 
 form label {
@@ -51,8 +53,13 @@ form button {
     color: white;
 }
 
+.check {
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
 .block_notas {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 

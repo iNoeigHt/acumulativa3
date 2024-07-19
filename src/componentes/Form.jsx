@@ -53,10 +53,10 @@ export function FormPost() {
             <h1>Post It Simulator!</h1>
             <div>
                 <form>
-                    <input ref={tituloRef} className="inputs" type="text" id="titulo"/>
-                    <input ref={descripcionRef} className="inputs" type="text" id="descripcion"/>
-                    <label>
-                        <input ref={importanteRef} className="inputs" type="checkbox" id="importante" /> Importante!
+                    <input ref={tituloRef} className="inputs" placeholder="Titulo" type="text" id="titulo"/>
+                    <input ref={descripcionRef} className="inputs" placeholder="Descripcion" type="text" id="descripcion"/>
+                    <label className='check'>
+                        <input ref={importanteRef} className="inputsk" type="checkbox" id="importante" /> Importante!
                     </label>
                     <button onClick={addPost} id="boton_agregar">AGREGAR</button>
                 </form>
