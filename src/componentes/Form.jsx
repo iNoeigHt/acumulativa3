@@ -1,5 +1,5 @@
 import React from 'react';
-import '..estilos/Form.css';
+import '../estilos/Form.css';
 import { Post } from './Postit';
 import { useRef, useState } from 'react';
 import { v4 as uuid } from 'uuid';
@@ -52,7 +52,7 @@ export function FormPost() {
         <div className="container">
             <h1>Post It Simulator!</h1>
             <div>
-                <form onSubmit={agregarPost}>
+                <form>
                     <input ref={tituloRef} className="inputs" type="text" id="titulo" placeHolder="Titulo"/>
                     <input ref={descripcionRef} className="inputs" type="text" id="descripcion" placeHolder="Descripcion"/>
                     <label>

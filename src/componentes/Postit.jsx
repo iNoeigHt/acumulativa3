@@ -13,7 +13,7 @@ export function Post({titulo, descripcion, importante, eliminarPost}) {
                 <div className="post">
                     <h1 className="tituloPost"></h1> 
                     <p className="descripcionPost"></p>
-                    <button onClick={() => eliminarPost(id)} className="botonPost">X</button>
+                    <button onClick={eliminarPost} className="botonPost">X</button>
                 </div> 
             </div>
         )
@@ -25,7 +25,7 @@ export function Post({titulo, descripcion, importante, eliminarPost}) {
                 <div className="post">
                     <h1 className="tituloPost"></h1> 
                     <p className="descripcionPost"></p>
-                    <button onClick={() => eliminarPost(id)} className="botonPost">X</button>
+                    <button onClick={eliminarPost} className="botonImp">X</button>
                 </div> 
             </div>
     )

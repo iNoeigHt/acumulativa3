@@ -1,13 +1,21 @@
 .contenedor {
     position: relative;
-    width: 280px; 
-    height: 320px; 
+    width: 250px; 
+    height: 310px; 
     background-color: #FFFFCC; 
     padding: 12px; 
+    margin-right: 25px;
+    margin-top: 30px;
 }
 
 .contenedorImportante{
     background-color: #EC7063;
+    position: relative;
+    width: 250px; 
+    height: 310px; 
+    padding: 12px; 
+    margin-right: 25px;
+    margin-top: 30px;
 }
 
 .botonPost{
