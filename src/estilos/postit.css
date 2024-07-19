@@ -2,11 +2,11 @@
     position: relative;
     width: 280px; 
     height: 320px; 
-    background-color: #e0e8f0; 
+    background-color: #FFFFCC; 
     padding: 12px; 
 }
 
-.contenedor.importante{
+.contenedorImportante{
     background-color: #EC7063;
 }
 
@@ -15,7 +15,16 @@
     top: 10px;
     right: 10px;
     padding: 5px 10px;
-    background-color: #e0e8f0;
+    background-color: #FFFFCC;;
+    border: none;
+}
+
+.botonImp{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #EC7063;
     border: none;
 }
 

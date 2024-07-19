@@ -1,17 +1,33 @@
 import React from "react";
 import '../estilos/postit.css';
 
-function Post(titulo, descripcion, importante, eliminarPost) {
+export function Post({titulo, descripcion, importante}) {
 
-    return (
-            <div className={importante ? 'contenedor importante' : 'contenedor'}>
+    const PostTitulo = titulo;
+    const PostDescrip = descripcion;
+    const PostImp = importante;
+
+    if(importante) {
+        return (
+            <div className="contenedor">
                 <div className="post">
-                    <h1 className="tituloPost">{titulo}</h1> 
-                    <p className="descripcionPost">{descripcion}</p>
-                    <button onClick={() => eliminarPost()} className="botonPost">X</button>
+                    <h1 className="tituloPost"></h1> 
+                    <p className="descripcionPost"></p>
+                    <button onClick={eliminarPost} className="botonPost">X</button>
+                </div> 
+            </div>
+        )
+    }
+
+    else {
+        return (
+            <div className="contenedorImportante">
+                <div className="post">
+                    <h1 className="tituloPost"></h1> 
+                    <p className="descripcionPost"></p>
+                    <button onClick={eliminarPost} className="botonPost">X</button>
                 </div> 
             </div>
     )
+    }
 }
-
-export default Post;
