@@ -1,19 +1,22 @@
 .contenedor {
     position: relative;
-    width: 210px; 
+    width: 220px; 
     height: 220px; 
     background-color: #FFFFCC; 
     padding: 12px; 
     margin-right: 10px;
     margin-top: 30px;
+    display: flex;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     transform: rotate(4deg);
+
 }
 
 .contenedorImportante{
     background-color: #EC7063;
     position: relative;
-    width: 210px; 
+    display: flex;
+    width: 220px; 
     height: 220px; 
     padding: 12px; 
     margin-right: 10px;
@@ -58,11 +61,16 @@
 
 .tituloPost{
     color: black;
+    width: 200px;
     padding: 5px;
-
+    overflow: hidden;
+    word-wrap: break-word;
 }
 
 .descripcionPost{
     color: black;
-
+    width: 210px;
+    padding: 5px;
+    overflow: hidden;
+    word-wrap: break-word;
 }

@@ -21,10 +21,12 @@ export function FormPost() {
         const importante = importanteRef.current.checked;
 
         if(descripcion.trim() === ''){
-            setMensaje('Campos vacios');
+            setMensaje(() => 'Descripcion obligatoria');
+
+            e.preventDefault();
 
             setTimeout(() => {
-                setMensaje('');
+                setMensaje(() => '');
             }, 3000);
 
             return
@@ -58,8 +60,11 @@ export function FormPost() {
                 <form>
                     <input ref={tituloRef} className="inputs" placeholder="Titulo" type="text" id="titulo"/>
                     <input ref={descripcionRef} className="inputs" placeholder="Descripcion" type="text" id="descripcion"/>
+                    <div className="mensaje">
+                        {mensaje}
+                    </div>
                     <label className='check'>
-                        <input ref={importanteRef} className="inputsk" type="checkbox" id="importante" /> Importante!
+                        <input ref={importanteRef} className="inputs" type="checkbox" id="importante" /> Importante!
                     </label>
                     <button onClick={addPost} id="boton_agregar">AGREGAR</button>
                 </form>

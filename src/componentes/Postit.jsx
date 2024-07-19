@@ -10,17 +10,19 @@ export function Post({id, titulo, descripcion, importante, eliminarPost}) {
     if(importante) {
         return (
             <div className="contenedorImportante">
-                <div className="post">
-                    <h1 className="tituloPost">{PostTitulo}</h1> 
-                    <p className="descripcionPost">{PostDescrip}</p>
-                    <div 
-                        className="icono-eliminar"
-                        onClick={() => eliminarPost(id)}>
-                        <AiOutlineClose />
-                    </div>
-                </div> 
+                <div className="contenedor1">
+                    <div className="post">
+                        <h1 className="tituloPost">{PostTitulo}</h1> 
+                        <p className="descripcionPost">{PostDescrip}</p>
+                        <div 
+                            className="icono-eliminar"
+                            onClick={() => eliminarPost(id)}>
+                            <AiOutlineClose />
+                        </div>
+                    </div> 
+                </div>
             </div>
-    )
+    )   
     }
     else {
         return (
