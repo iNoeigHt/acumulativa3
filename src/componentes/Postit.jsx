@@ -1,8 +1,10 @@
 import React from "react";
 import '../estilos/postit.css';
+import { AiOutlineClose } from "react-icons/ai";
 
-export function Post({titulo, descripcion, importante, eliminarPost}) {
+export function Post({id, titulo, descripcion, importante, eliminarPost}) {
 
+    const PostId = id;
     const PostTitulo = titulo;
     const PostDescrip = descripcion;
     const PostImp = importante;
@@ -13,7 +15,9 @@ export function Post({titulo, descripcion, importante, eliminarPost}) {
                 <div className="post">
                     <h1 className="tituloPost"></h1> 
                     <p className="descripcionPost"></p>
-                    <button onClick={eliminarPost} className="botonPost">X</button>
+                    <div className="icono-eliminar">
+                        <AiOutlineClose />
+                    </div>
                 </div> 
             </div>
         )
@@ -25,7 +29,11 @@ export function Post({titulo, descripcion, importante, eliminarPost}) {
                 <div className="post">
                     <h1 className="tituloPost"></h1> 
                     <p className="descripcionPost"></p>
-                    <button onClick={eliminarPost} className="botonImp">X</button>
+                    <div 
+                        className="icono-eliminar"
+                        onClick={() => eliminarPost(id)}>
+                        <AiOutlineClose />
+                    </div>
                 </div> 
             </div>
     )

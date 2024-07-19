@@ -53,8 +53,8 @@ export function FormPost() {
             <h1>Post It Simulator!</h1>
             <div>
                 <form>
-                    <input ref={tituloRef} className="inputs" type="text" id="titulo" placeHolder="Titulo"/>
-                    <input ref={descripcionRef} className="inputs" type="text" id="descripcion" placeHolder="Descripcion"/>
+                    <input ref={tituloRef} className="inputs" type="text" id="titulo"/>
+                    <input ref={descripcionRef} className="inputs" type="text" id="descripcion"/>
                     <label>
                         <input ref={importanteRef} className="inputs" type="checkbox" id="importante" /> Importante!
                     </label>
