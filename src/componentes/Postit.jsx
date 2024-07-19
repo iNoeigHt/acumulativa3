@@ -1,7 +1,7 @@
 import React from "react";
 import '../estilos/postit.css';
 
-export function Post({titulo, descripcion, importante}) {
+export function Post({titulo, descripcion, importante, eliminarPost}) {
 
     const PostTitulo = titulo;
     const PostDescrip = descripcion;
@@ -13,7 +13,7 @@ export function Post({titulo, descripcion, importante}) {
                 <div className="post">
                     <h1 className="tituloPost"></h1> 
                     <p className="descripcionPost"></p>
-                    <button onClick={eliminarPost} className="botonPost">X</button>
+                    <button onClick={() => eliminarPost(id)} className="botonPost">X</button>
                 </div> 
             </div>
         )
@@ -25,7 +25,7 @@ export function Post({titulo, descripcion, importante}) {
                 <div className="post">
                     <h1 className="tituloPost"></h1> 
                     <p className="descripcionPost"></p>
-                    <button onClick={eliminarPost} className="botonPost">X</button>
+                    <button onClick={() => eliminarPost(id)} className="botonPost">X</button>
                 </div> 
             </div>
     )
